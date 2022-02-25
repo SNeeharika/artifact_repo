@@ -28,7 +28,7 @@ jobs:
       - name: Upload math result for job 2
         uses: actions/upload-artifact@v1
         with:
-          name: homework1
+          name: homework
           path: multiply.txt
   job_3:
     name: Display results
@@ -38,11 +38,11 @@ jobs:
       - name: Download math result for job 2
         uses: actions/download-artifact@v1
         with:
-          name: homework1
+          name: homework
       - name: Print the final result
         shell: bash
         run: |
-          value=`cat homework1/multiply.txt`
+          value=`cat homework/multiply.txt`
           echo The result is $value
 
 
