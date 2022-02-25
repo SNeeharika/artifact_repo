@@ -18,7 +18,7 @@ jobs:
     needs: job_1
     runs-on: windows-latest
     steps:
-      - name: Download math result for job 1
+      - name: Download math result for job1
         uses: actions/download-artifact@v1
         with:
           name: homework
