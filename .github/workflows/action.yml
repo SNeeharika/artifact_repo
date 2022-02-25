@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: homework
-          path: homework/multiply.txt
+          path: multiply.txt
   job_3:
     name: Display results
     needs: job_2
